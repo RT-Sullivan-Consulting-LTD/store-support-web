@@ -3,13 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RT Sullivan Consulting Ltd</title>
-  <meta http-equiv="refresh" content="0; url=/herdcount/">
+  <title>RT Sullivan Consulting Ltd — iOS Apps</title>
+  <meta name="description" content="iOS apps by RT Sullivan Consulting Ltd.">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .app-card {
+      display: block;
+      padding: 2rem 1.5rem;
+      border-radius: 16px;
+      border: 1.5px solid #e0e0e0;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.15s, transform 0.1s;
+    }
+
+    .app-card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transform: translateY(-2px);
+      color: inherit;
+    }
+
+    .app-card-icon { font-size: 2.5rem; margin-bottom: 0.75rem; display: block; }
+    .app-card h2 { font-size: 1.2rem; font-weight: 800; margin-bottom: 0.3rem; }
+    .app-card p { font-size: 0.92rem; color: #666; margin: 0; }
+
+    .app-card.herdcount { border-color: #d0e4be; background: #f9fdf5; }
+    .app-card.herdcount h2 { color: #1C3A0E; }
+    .app-card.herdcount:hover { border-color: #7EC84A; }
+
+    .app-card.menopause { border-color: #F0D5C8; background: #FDF9F7; }
+    .app-card.menopause h2 { color: #4A1A2C; }
+    .app-card.menopause:hover { border-color: #E8926A; }
+  </style>
 </head>
 <body>
-  <div style="padding:3rem; text-align:center; font-family:-apple-system,sans-serif; color:#555;">
-    <p>Redirecting to <a href="/herdcount/">Herdcount</a>…</p>
+
+<nav>
+  <a class="nav-brand" href="/">RT Sullivan Consulting Ltd</a>
+</nav>
+
+<div class="hero" style="padding:3rem 1.5rem;">
+  <h1 style="font-size:clamp(1.6rem,4vw,2.2rem);">iOS Apps</h1>
+  <p style="color:rgba(255,255,255,0.75); margin-top:0.5rem;">Independent software by RT Sullivan Consulting Ltd, United Kingdom.</p>
+</div>
+
+<section>
+  <div class="container-wide">
+    <div class="app-grid">
+      <a href="/herdcount/" class="app-card herdcount">
+        <span class="app-card-icon">🐔</span>
+        <h2>Herdcount</h2>
+        <p>Count your flock from a photo in under a second. Offline, one-time purchase, no account needed.</p>
+      </a>
+      <a href="/menopause-intelligence/" class="app-card menopause">
+        <span class="app-card-icon">🌡️</span>
+        <h2>Menopause Intelligence</h2>
+        <p>On-device AI that predicts your Flare Days before they happen. Private, personalised, no server required.</p>
+      </a>
+    </div>
   </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 RT Sullivan Consulting Ltd · Made in the UK</p>
+  </div>
+</footer>
+
 </body>
 </html>
