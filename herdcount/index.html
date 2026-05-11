@@ -8,6 +8,31 @@
   <link rel="stylesheet" href="../style.css">
   <style>
     /* page-specific overrides */
+    .screenshots {
+      display: flex;
+      gap: 2.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .screenshot {
+      text-align: center;
+    }
+
+    .screenshot img {
+      width: 240px;
+      max-width: 100%;
+      border-radius: 36px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    }
+
+    .screenshot figcaption {
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
     .coming-soon {
       display: inline-block;
       background: var(--straw);
@@ -49,6 +74,23 @@
   </div>
   <p style="margin-top:1rem; font-size:0.82rem; color:rgba(255,255,255,0.5);">iOS 17+ · iPhone · One-time purchase</p>
 </div>
+
+<!-- Screenshots -->
+<section>
+  <div class="container">
+    <h2>See it in action</h2>
+    <div class="screenshots">
+      <figure class="screenshot">
+        <img src="/herdcount/images/01-category.png" alt="Herdcount new count screen — photo of sheep with category picker showing Poultry, Sheep, Cattle, Plants, Other">
+        <figcaption>Pick your animal type</figcaption>
+      </figure>
+      <figure class="screenshot">
+        <img src="/herdcount/images/02-review.png" alt="Herdcount review screen — 6 sheep detected with numbered green dots on each animal">
+        <figcaption>Every animal counted and marked</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
 
 <!-- How it works -->
 <section>
