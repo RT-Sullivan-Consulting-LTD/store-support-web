@@ -112,30 +112,33 @@ footer {
 .sz-carousel-section {
   background: var(--sz-bg);
   padding: 3rem 0;
-  overflow: hidden;
 }
 
+/* Container constrains to one screenshot width so scroll-snap kicks in */
 .sz-carousel {
   display: flex;
-  gap: 1.5rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
-  padding: 0.5rem 2rem 1rem;
-  scroll-padding: 0 2rem;
+  max-width: 320px;
+  margin: 0 auto;
 }
 .sz-carousel::-webkit-scrollbar { display: none; }
 
+/* Each item fills the full container width — one per "page" */
 .sz-carousel-item {
-  flex: 0 0 auto;
-  scroll-snap-align: center;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0 1rem;
   margin: 0;
 }
 
 .sz-carousel-item img {
-  width: 240px;
-  max-width: 75vw;
+  width: 260px;
+  max-width: 90vw;
   border-radius: 36px;
   box-shadow: 0 16px 48px rgba(0,0,0,0.6);
   display: block;
@@ -145,7 +148,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  margin-top: 1.25rem;
+  margin-top: 0.75rem;
 }
 
 .sz-dots button {
@@ -160,8 +163,3 @@ footer {
 }
 
 .sz-dots button.active { background: var(--sz-blue); }
-
-@media (min-width: 800px) {
-  .sz-carousel { justify-content: center; }
-  .sz-carousel-item img { width: 280px; }
-}
