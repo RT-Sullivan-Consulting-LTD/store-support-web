@@ -1,0 +1,167 @@
+/* ── Sessionz.ai page theme — dark + electric blue ── */
+:root {
+  --sz-bg:      #0f0f0f;
+  --sz-surface: #1a1a1a;
+  --sz-border:  #2a2a2a;
+  --sz-blue:    #3b82f6;
+  --sz-blue-h:  #60a5fa;
+  --sz-text:    #ffffff;
+  --sz-muted:   #9ca3af;
+}
+
+body {
+  background: var(--sz-bg);
+  color: var(--sz-text);
+}
+
+/* Nav */
+nav {
+  background: rgba(15,15,15,0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--sz-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-brand { color: var(--sz-text); }
+.nav-links a { color: var(--sz-muted); }
+.nav-links a:hover { color: var(--sz-blue); }
+
+/* Links */
+a { color: var(--sz-blue); }
+a:hover { color: var(--sz-blue-h); }
+
+/* Hero — full-viewport dark, centred */
+.hero {
+  background: var(--sz-bg);
+  border-bottom: 1px solid var(--sz-border);
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1.5rem 4rem;
+  text-align: center;
+}
+.hero h1 { color: var(--sz-text); }
+.hero-sub { color: var(--sz-muted); }
+
+/* Override lime tagline colour */
+.hero-tagline { color: var(--sz-blue); font-style: normal; }
+
+/* Sections */
+section { background: var(--sz-bg); }
+section:nth-child(even) { background: var(--sz-surface); }
+section h2 { color: var(--sz-text); }
+
+/* Feature cards */
+.feature {
+  background: var(--sz-surface);
+  border-color: var(--sz-border);
+}
+.feature h3 { color: var(--sz-text); }
+.feature p  { color: var(--sz-muted); }
+
+/* Override lime primary button */
+.btn-primary {
+  background: var(--sz-blue);
+  color: #fff;
+}
+.btn-primary:hover { background: var(--sz-blue-h); color: #fff; }
+
+/* CTA strip */
+.cta-strip {
+  background: var(--sz-surface);
+  border-top: 1px solid var(--sz-border);
+  border-bottom: 1px solid var(--sz-border);
+}
+.cta-strip h2 { color: var(--sz-text); }
+.cta-strip p  { color: var(--sz-muted); }
+
+/* Page header (support/privacy) */
+.page-header {
+  background: var(--sz-surface);
+  border-bottom: 1px solid var(--sz-border);
+}
+.page-header h1 { color: var(--sz-text); }
+.page-header p  { color: var(--sz-muted); }
+
+/* Page body */
+.page-body { background: var(--sz-bg); }
+.page-body h2 {
+  color: var(--sz-text);
+  border-bottom-color: var(--sz-border);
+}
+.page-body h3 { color: var(--sz-text); }
+.page-body p  { color: var(--sz-muted); }
+.page-body ul { color: var(--sz-muted); }
+.page-body a  { color: var(--sz-blue); }
+
+/* Q&A */
+.qa dt { color: var(--sz-text); }
+.qa dd { color: var(--sz-muted); }
+
+/* Footer */
+footer {
+  background: #000;
+  border-top: 1px solid var(--sz-border);
+}
+
+/* ── Screenshot carousel ── */
+.sz-carousel-section {
+  background: var(--sz-bg);
+  padding: 3rem 0;
+  overflow: hidden;
+}
+
+.sz-carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 0.5rem 2rem 1rem;
+  scroll-padding: 0 2rem;
+}
+.sz-carousel::-webkit-scrollbar { display: none; }
+
+.sz-carousel-item {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  margin: 0;
+}
+
+.sz-carousel-item img {
+  width: 240px;
+  max-width: 75vw;
+  border-radius: 36px;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.6);
+  display: block;
+}
+
+.sz-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.sz-dots button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: #333;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s;
+}
+
+.sz-dots button.active { background: var(--sz-blue); }
+
+@media (min-width: 800px) {
+  .sz-carousel { justify-content: center; }
+  .sz-carousel-item img { width: 280px; }
+}
