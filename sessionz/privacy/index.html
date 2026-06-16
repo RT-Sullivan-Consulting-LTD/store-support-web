@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sessionz.ai Privacy Policy</title>
+  <meta name="description" content="Privacy policy for the Sessionz.ai workout app.">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="/sessionz/">
+    <img src="/sessionz/icon.png" width="28" height="28" alt="" style="border-radius:6px; vertical-align:middle; margin-right:0.5rem; box-shadow:0 2px 6px rgba(0,0,0,0.4);">
+    Sessionz.ai
+  </a>
+  <ul class="nav-links">
+    <li><a href="/sessionz/support/">Support</a></li>
+    <li><a href="/sessionz/privacy/">Privacy</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p>Last updated: 16 June 2026</p>
+  </div>
+</div>
+
+<div class="page-body">
+  <div class="container">
+
+    <p>Sessionz.ai is developed by RT Sullivan Consulting Ltd, United Kingdom.</p>
+
+    <h2>Data we collect</h2>
+    <p>Sessionz.ai collects the minimum data needed to operate the AI plan generation feature:</p>
+    <ul>
+      <li><strong>Goals text and equipment list</strong> — the text you enter when generating a plan is sent to our plan generation server (Supabase Edge Functions) and forwarded to the Claude AI API (Anthropic). No personal identifiers are attached to this request. The text is used only to generate your plan and is not retained.</li>
+      <li><strong>Subscription status</strong> — we receive confirmation from Apple that your subscription is active. We store only whether you have an active subscription and when it expires. No payment data is stored or accessible to us.</li>
+      <li><strong>Anonymous user ID</strong> — Supabase assigns an anonymous identifier used solely to enforce per-user plan generation limits. This ID is not linked to your name, email, or Apple ID.</li>
+    </ul>
+
+    <h2>Data stored on your device</h2>
+    <p>Your workout plans, session logs, set records, and personal profile (goals, equipment, unit preferences) are stored privately on your iPhone using SwiftData. This data:</p>
+    <ul>
+      <li>Never leaves your device except as part of the plan generation request described above</li>
+      <li>Is not uploaded to any server or analytics service</li>
+      <li>May be included in your local iTunes/Finder backup or iCloud device backup — both controlled entirely by you</li>
+      <li>Is deleted when you uninstall the app</li>
+    </ul>
+
+    <h2>HealthKit</h2>
+    <p>Sessionz.ai requests read access to Apple Health to optionally incorporate your recent activity data into plan generation. HealthKit data:</p>
+    <ul>
+      <li>Is read only at the moment you tap Generate Plan, if you have granted permission</li>
+      <li>Is sent as part of the plan generation request and is not retained</li>
+      <li>Is never shared with third parties or used for advertising</li>
+    </ul>
+    <p>You can revoke HealthKit access at any time in Settings → Privacy &amp; Security → Health → Sessionz.</p>
+
+    <h2>Third-party services</h2>
+    <p>Sessionz.ai uses the following third-party services:</p>
+    <ul>
+      <li><strong>Supabase</strong> — hosts the plan generation API. Processes goals text and equipment list only. No personal data is stored on Supabase beyond the anonymous user ID and subscription expiry date.</li>
+      <li><strong>Anthropic (Claude API)</strong> — receives goals text and equipment list to generate workout plans. Anthropic's data usage policy applies to this data; plans are not used to train models under the API terms.</li>
+      <li><strong>Apple StoreKit</strong> — manages subscription payments. All billing is handled entirely by Apple.</li>
+    </ul>
+    <p>No analytics SDKs, advertising networks, or crash reporters are included in the app.</p>
+
+    <h2>Children</h2>
+    <p>Sessionz.ai is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be published at this URL and the date above will be updated. We will not introduce new data collection practices without updating this policy.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about privacy: <a href="mailto:rtoddsullivan@mac.com">rtoddsullivan@mac.com</a></p>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>
+      <a href="/sessionz/">Sessionz.ai</a> &nbsp;·&nbsp;
+      <a href="/sessionz/support/">Support</a>
+    </p>
+    <p style="margin-top:0.5rem;">© 2026 RT Sullivan Consulting Ltd</p>
+  </div>
+</footer>
+
+</body>
+</html>
