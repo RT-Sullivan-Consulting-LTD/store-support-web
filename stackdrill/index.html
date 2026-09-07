@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StackDrill — Master a memorised deck</title>
+  <meta name="description" content="Drill app for magicians mastering Mnemonica, Aronson, or any custom stack. Memory hooks, six drill modes, fully offline.">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    :root {
+      --forest:    #14231C;
+      --meadow:    #23402D;
+      --lime:      #C9A24B;
+      --highlight: #E3C077;
+      --tint:      #F6F1E4;
+      --border:    #E4D6AC;
+    }
+
+    a { color: var(--meadow); }
+    a:hover { color: var(--lime); }
+    .nav-links a:hover { color: var(--lime); }
+
+    .hero-tagline { color: var(--lime); }
+
+    .btn-primary { background: var(--lime); color: var(--forest); }
+    .btn-primary:hover { background: var(--highlight); color: var(--forest); }
+
+    .step-num { background: var(--lime); color: var(--forest); }
+    .step, .feature { border-color: var(--border); }
+
+    section h2, .step h3, .feature h3 { color: var(--forest); }
+
+    .cta-strip { background: var(--meadow); }
+
+    .store-badge { background: #000; }
+
+    .hero-icon-img {
+      width: 88px;
+      height: 88px;
+      border-radius: 20px;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="/stackdrill/">StackDrill</a>
+  <ul class="nav-links">
+    <li><a href="/stackdrill/support/">Support</a></li>
+    <li><a href="https://n3urs.github.io/MnemonicaStack/privacy.html">Privacy</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+  <img class="hero-icon-img" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b8/69/ce/b869ce41-003c-0230-00e4-45533e63be98/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="StackDrill app icon">
+  <h1>Master the deck.<br>Cold, every time.</h1>
+  <p class="hero-tagline">Mnemonica and Aronson, built in.</p>
+  <p class="hero-sub">StackDrill trains you on a memorised deck with memory hooks and six drill modes — Card→Position, Position→Card, Neighbours, Sequence, ACAAN cuts, and hands-free.</p>
+  <div class="btn-group">
+    <a href="https://apps.apple.com/gb/app/stackdrill/id6778773023" class="store-badge" aria-label="Download on the App Store">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+      </svg>
+      Download on the App Store
+    </a>
+  </div>
+  <p style="margin-top:1rem; font-size:0.82rem; color:rgba(255,255,255,0.5);">iOS 15+ · iPhone &amp; iPad · £4.99 one-time</p>
+</div>
+
+<!-- How it works -->
+<section>
+  <div class="container-wide">
+    <h2>From cold to cold-deck</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Pick your stack</h3>
+        <p>Mnemonica and Aronson are built in and ready to go. Or add any custom stack in your own order.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Learn the hooks</h3>
+        <p>Major System position pegs give each number a concrete image; card images help you reconstruct the deck visually. Every association is editable.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Drill until it's automatic</h3>
+        <p>Card→Position, Position→Card, Neighbours, Sequence, ACAAN cuts, hands-free. Weighted selection quietly resurfaces your weak cards.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section>
+  <div class="container-wide">
+    <h2>Built for the deck you already memorised</h2>
+    <div class="features">
+      <div class="feature">
+        <span class="feature-icon">🎴</span>
+        <h3>Two stacks built in</h3>
+        <p>Mnemonica and Aronson, ready to drill with no setup.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">✏️</span>
+        <h3>Fully custom stacks</h3>
+        <p>Running a different order? Add any stack you've memorised, in your own sequence.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">🔢</span>
+        <h3>Major System pegs</h3>
+        <p>Every position gets a concrete image, so numbers stop being abstract.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">🃏</span>
+        <h3>Editable associations</h3>
+        <p>Don't like a hook? Change it. Every card-to-image link is yours.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">🎯</span>
+        <h3>Six drill modes</h3>
+        <p>Card→Position, Position→Card, Neighbours, Sequence, ACAAN cuts, hands-free.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">⚖️</span>
+        <h3>Weighted resurfacing</h3>
+        <p>Cards you get wrong come back more often — quietly, with no settings screen to manage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-strip">
+  <div class="container">
+    <h2>Ready to know your deck cold?</h2>
+    <p>Download StackDrill — one-time purchase, no subscription, no account.</p>
+    <a href="https://apps.apple.com/gb/app/stackdrill/id6778773023" class="store-badge" aria-label="Download on the App Store">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+      </svg>
+      Download on the App Store
+    </a>
+    <p style="margin-top:1rem; font-size:0.82rem; color:rgba(255,255,255,0.6);">iOS 15+ · iPhone &amp; iPad · £4.99 one-time</p>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>
+      <a href="/stackdrill/support/">Support</a> &nbsp;·&nbsp;
+      <a href="https://n3urs.github.io/MnemonicaStack/privacy.html">Privacy Policy</a>
+    </p>
+    <p style="margin-top:0.5rem;">© 2026 RT Sullivan Consulting Ltd · Made in the UK</p>
+  </div>
+</footer>
+
+</body>
+</html>

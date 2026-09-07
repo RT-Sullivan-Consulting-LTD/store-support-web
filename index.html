@@ -4,48 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RT Sullivan Consulting Ltd — Apps</title>
-  <meta name="description" content="Apps by RT Sullivan Consulting Ltd.">
+  <meta name="description" content="iPhone and iPad apps by RT Sullivan Consulting Ltd: Herdcount, StackDrill, Menopause Intelligence and Sessionz.ai.">
   <link rel="stylesheet" href="style.css">
-  <style>
-    .app-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    .app-card {
-      display: block;
-      padding: 2rem 1.5rem;
-      border-radius: 16px;
-      border: 1.5px solid #e0e0e0;
-      text-decoration: none;
-      color: inherit;
-      transition: box-shadow 0.15s, transform 0.1s;
-    }
-
-    .app-card:hover {
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      transform: translateY(-2px);
-      color: inherit;
-    }
-
-    .app-card-icon { font-size: 2.5rem; margin-bottom: 0.75rem; display: block; }
-    .app-card h2 { font-size: 1.2rem; font-weight: 800; margin-bottom: 0.3rem; }
-    .app-card p { font-size: 0.92rem; color: #666; margin: 0; }
-
-    .app-card.herdcount { border-color: #d0e4be; background: #f9fdf5; }
-    .app-card.herdcount h2 { color: #1C3A0E; }
-    .app-card.herdcount:hover { border-color: #7EC84A; }
-
-    .app-card.menopause { border-color: #F0D5C8; background: #FDF9F7; }
-    .app-card.menopause h2 { color: #4A1A2C; }
-    .app-card.menopause:hover { border-color: #E8926A; }
-
-    .app-card.sessionz { border-color: #bfdbfe; background: #eff6ff; }
-    .app-card.sessionz h2 { color: #1e3a5f; }
-    .app-card.sessionz:hover { border-color: #3b82f6; }
-  </style>
 </head>
 <body>
 
@@ -53,29 +13,105 @@
   <a class="nav-brand" href="/">RT Sullivan Consulting Ltd</a>
 </nav>
 
-<div class="hero" style="padding:3rem 1.5rem;">
-  <h1 style="font-size:clamp(1.6rem,4vw,2.2rem);">Apps</h1>
-  <p style="color:rgba(255,255,255,0.75); margin-top:0.5rem;">Independent software by RT Sullivan Consulting Ltd, United Kingdom.</p>
+<div class="hero">
+  <h1>Apps</h1>
+  <p class="hero-tagline">Four small, focused apps. Four very different problems.</p>
+  <p class="hero-sub">RT Sullivan Consulting Ltd builds independent iPhone and iPad software — currently
+    spanning livestock counting, card-magic memory training, perimenopause tracking and workout
+    coaching. Different worlds, same habit: pick one problem and solve it properly.</p>
 </div>
 
 <section>
   <div class="container-wide">
+    <h2>The apps</h2>
     <div class="app-grid">
-      <a href="/herdcount/" class="app-card herdcount">
-        <span class="app-card-icon">🐔</span>
-        <h2>Herdcount</h2>
-        <p>Count your flock from a photo in under a second. Offline, one-time purchase, no account needed.</p>
-      </a>
-      <a href="/menopause-intelligence/" class="app-card menopause">
-        <span class="app-card-icon">🌡️</span>
-        <h2>Menopause Intelligence</h2>
-        <p>On-device AI that predicts your Flare Days before they happen. Private, personalised, no server required.</p>
-      </a>
-      <a href="/sessionz/" class="app-card sessionz">
-        <span class="app-card-icon">💪</span>
-        <h2>Sessionz.ai</h2>
-        <p>AI workout plans for iPhone &amp; Apple Watch. Train smarter, every session.</p>
-      </a>
+
+      <article class="app-card app-card--herdcount">
+        <div class="app-card-top">
+          <span class="app-icon">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4e/7c/43/4e7c4391-35ea-5fff-c917-86b00e2a8bb2/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg"
+                 alt="Herdcount app icon" width="64" height="64" loading="lazy"
+                 onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'app-icon-fallback',textContent:'🐔'}))">
+          </span>
+          <div>
+            <h3><a href="/herdcount/">Herdcount</a></h3>
+            <p class="app-card-meta">£3.99 · iPhone &amp; iPad</p>
+          </div>
+        </div>
+        <p>Counts chickens, sheep, cattle, plants and people in under a second — from a photo, or live
+          as a mob walks through a gate. Self-correcting: pan back and the count unwinds instead of
+          doubling, and an animal that turns around comes off the tally.</p>
+        <div class="app-card-actions">
+          <a class="btn-card" href="/herdcount/">App page</a>
+          <a class="btn-card btn-card-store" href="https://apps.apple.com/gb/app/herdcount/id6765711537">View on the App Store</a>
+        </div>
+      </article>
+
+      <article class="app-card app-card--stackdrill">
+        <div class="app-card-top">
+          <span class="app-icon">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b8/69/ce/b869ce41-003c-0230-00e4-45533e63be98/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg"
+                 alt="StackDrill app icon" width="64" height="64" loading="lazy"
+                 onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'app-icon-fallback',textContent:'🃏'}))">
+          </span>
+          <div>
+            <h3><a href="/stackdrill/">StackDrill</a></h3>
+            <p class="app-card-meta">£4.99 · iPhone &amp; iPad</p>
+          </div>
+        </div>
+        <p>A training app for magicians mastering a memorised deck. Ships with the Mnemonica and
+          Aronson stacks built in — or add your own — and drills Card→Position, Position→Card,
+          Neighbours, Sequence and ACAAN, with weighted selection that quietly resurfaces the cards
+          you're weak on.</p>
+        <div class="app-card-actions">
+          <a class="btn-card" href="/stackdrill/">App page</a>
+          <a class="btn-card btn-card-store" href="https://apps.apple.com/gb/app/stackdrill/id6778773023">View on the App Store</a>
+        </div>
+      </article>
+
+      <article class="app-card app-card--menopause">
+        <div class="app-card-top">
+          <span class="app-icon">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/60/d1/0f/60d10faf-881b-a87f-53f6-cabb57ddb9d7/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg"
+                 alt="Menopause Intelligence app icon" width="64" height="64" loading="lazy"
+                 onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'app-icon-fallback',textContent:'🌡️'}))">
+          </span>
+          <div>
+            <h3><a href="/menopause-intelligence/">Menopause Intelligence</a></h3>
+            <p class="app-card-meta">Free · iPhone, iPad &amp; Apple Watch</p>
+          </div>
+        </div>
+        <p>Uses AI to predict high-symptom days before they happen, spotting the shifts in sleep
+          quality, HRV and body temperature that precede hot flashes, brain fog, fatigue and mood
+          changes. Connect an Apple Watch and it reads up to 90 days of existing Apple Health
+          history, so it starts from real data rather than cold.</p>
+        <div class="app-card-actions">
+          <a class="btn-card" href="/menopause-intelligence/">App page</a>
+          <a class="btn-card btn-card-store" href="https://apps.apple.com/gb/app/menopause-intelligence/id6766575760">View on the App Store</a>
+        </div>
+      </article>
+
+      <article class="app-card app-card--sessionz">
+        <div class="app-card-top">
+          <span class="app-icon">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2e/72/d3/2e72d3fe-0c80-b4eb-b844-c460d8d3d218/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg"
+                 alt="Sessionz.ai app icon" width="64" height="64" loading="lazy"
+                 onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'app-icon-fallback',textContent:'💪'}))">
+          </span>
+          <div>
+            <h3><a href="/sessionz/">Sessionz.ai</a></h3>
+            <p class="app-card-meta">Free · iPhone, iPad &amp; Apple Watch</p>
+          </div>
+        </div>
+        <p>Builds your training week from your actual logged data and explains every choice — press
+          20kg for 8 this week and next week targets 20kg for 10. Reads Apple Health for resting
+          heart rate, HRV and sleep, and only ever suggests weights for plates you actually own.</p>
+        <div class="app-card-actions">
+          <a class="btn-card" href="/sessionz/">App page</a>
+          <a class="btn-card btn-card-store" href="https://apps.apple.com/gb/app/sessionz-ai-ai-workout-coach/id6778076527">View on the App Store</a>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
